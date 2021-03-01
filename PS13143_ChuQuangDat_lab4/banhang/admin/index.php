@@ -1,0 +1,19 @@
+<?php
+    session_start();
+    require_once "../system/config.php";
+    define('ARR_CONTROLLER', ['home','binhluan','dienthoai','donhang','users','nhasanxuat']);
+    $ctrl='home';
+    if(isset($_GET['ctrl']) == true){
+        $ctrl = $_GET['ctrl'];
+    }
+    if(in_array($ctrl, ARR_CONTROLLER)==false) die('URL không tồn tại');
+    $pathFile = "controllers/".$ctrl.".php"; 
+    if(isset($pathFile)==true){
+      
+       
+        require_once $pathFile;
+        $controller = new $ctrl;
+       
+    }else echo "Controller không tồn tại!";
+
+?>

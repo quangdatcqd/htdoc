@@ -1,0 +1,12 @@
+RewriteEngine on
+AddDefaultCharset UTF-8
+Options -Indexes
+DirectoryIndex tin_tc.php
+RewriteCond %{TIME_HOUR}%{TIME_MIN} >2200 [OR]
+RewriteCond %{TIME_HOUR}%{TIME_MIN} <0600
+RewriteRule (.*) index_dem.php [L]
+
+RewriteRule ^action\.php$ -[F,NC]
+RewriteRule ^tin-noi-bat\.html$ /php2/PHP2_htaccess/tinnoibat.php [L]
+RewriteRule ^thong-tin-sinh-vien/ /php2/PHP2_htaccess/sinhvien.php [L]
+ErrorDocument 404 /php2/PHP2_htaccess/error/loi404.html 

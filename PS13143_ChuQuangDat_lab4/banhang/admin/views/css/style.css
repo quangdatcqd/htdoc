@@ -1,0 +1,29 @@
+body {
+    background-color: khaki!important
+}
+
+header.row {
+    height: 120px
+}
+
+nav.row {
+    height: 40px;
+    line-height: 40px
+}
+
+footer.row {
+    height: 60px;
+}
+
+div.noidung {
+    min-height: 500px
+}
+
+.table th,
+.table td {
+    padding: 15px;
+}
+
+.img-dt {
+    width: 100px;
+}

@@ -1,0 +1,88 @@
+body {
+    background-color: #fffce4;
+}
+
+header.row {
+    height: 120px;
+    background-color: #022e2c;
+}
+
+nav.row {
+    height: 40px;
+    line-height: 40px
+}
+
+footer.row {
+    height: 60px;
+    background-color: #664d03;
+}
+
+div.noidung {
+    min-height: 500px
+}
+
+.table th,
+.table td {
+    padding: 15px;
+}
+
+.img-dt {
+    width: 100px;
+}
+
+.header-title {
+    text-shadow: 2px 2px 8px #FF0000;
+    color: #dae535;
+    font-size: 50pt;
+}
+
+aside {
+    background-color: #150a0a;
+}
+
+aside a,
+aside ul {
+    color: white !important;
+}
+
+.accordion-button {
+    color: white;
+}
+
+.accordion-body {
+    background-color: beige;
+}
+
+.accordion-body p a {
+    color: black !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.accordion-body p a:hover {
+    color: rgb(179, 46, 46) !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:hover {
+    background-color: #683a13;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #093236;
+}
+
+.noidung_dt {
+    overflow: scroll;
+    height: 800px;
+}
+
+.tb_dt {
+    width: 140%;
+}
